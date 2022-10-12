@@ -12,4 +12,4 @@ while True:
     if decisao in 'Nn':
         break
         
-print(f'Os números cadrastados foram: {lista_User}')
+print(f'Os números cadrastados foram: {lista_User.sort()}')
