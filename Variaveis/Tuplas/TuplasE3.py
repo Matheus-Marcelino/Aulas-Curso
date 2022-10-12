@@ -1,5 +1,7 @@
 from random import randint
 
+# aleatorizando numeros nas tuplas
+
 lista_NUM = (randint(0,9), randint(0,9), randint(0,9), randint(0,9), randint(0,9))
 print(lista_NUM)
 

@@ -3,6 +3,8 @@ times = ('Palmerias', 'Internacional', 'Corinthians', 'Flamengo', 'Fluminense',
          'Santos', 'São Paulo', 'Brangantino', 'Goiás', 'Coritiba', 'Ceará SC',
          'Cuiabá', 'Atlético-GO', 'Avaí', 'Juventude')
 
+# procura de times
+
 print(times, '\n')
 print(times[-4:], '\n')
 print(times[0:5], '\n ')

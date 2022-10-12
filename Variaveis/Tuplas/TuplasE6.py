@@ -1,3 +1,5 @@
+# extraindo as vogais dos nomes
+
 PALAVRAS = ('Matheus', 'Maria', 'Josh', 'Kauan')
 
 for palavra in PALAVRAS:

@@ -1,6 +1,7 @@
 from colorama import init
 init()
 
+# Numeros por extenso
 extenso = (
     'zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito',
     'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis',

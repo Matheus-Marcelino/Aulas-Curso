@@ -1,6 +1,9 @@
+# procurando numeros na tupla
+
 lista_NUM = (int(input('Digite um valor: ')), int(input('Digite um valor: ')), int(
     input('Digite um valor: ')), int(input('Digite um valor: ')))
 pares = 0
+
 print(f'O 9 apareceu: {lista_NUM.count(9)}')
 
 try:
