@@ -17,6 +17,7 @@ print(num)
 print(f'Essa lista tem {len(num)} números')
 spc()
 
+# valores = list(range(4, 11)) # ele declara um lista e adiciona os numeros que estão no range
 valores = list()  # ou pode iniciar uma lista na VAR só com " [] "
 valores.append(5)
 valores.append(9)
