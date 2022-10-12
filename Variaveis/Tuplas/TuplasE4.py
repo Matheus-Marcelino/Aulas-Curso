@@ -6,7 +6,7 @@ pares = 0
 
 print(f'O 9 apareceu: {lista_NUM.count(9)}')
 
-try:
+try:  # index tem um erro, quando ele não acha o valor dentro da variavel
     print(f'O numero 3 está na posição: {lista_NUM.index(3)+1}')
 except ValueError:
     print('O valor 3 não estava dentro do contexto')
