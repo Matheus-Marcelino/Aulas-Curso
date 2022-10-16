@@ -5,8 +5,10 @@ User['media'] = float(input(f'Média de {User["nome"]}: '))
 
 print('-=' * 40)
 print(f' - Nome é igual a {User["nome"]}')
-print(f' - Média é igual a {User["media"]}')
+print(f' - Média é igual a {User["media"]:.2f}')
 if User['media'] >= 5.0:
-    print(' - Situação é igual a Aprovado')
+    User['situação'] = 'Aprovado'
 else:
-    print(' - Situação é igual a Reprovado')
+    User['situação'] = 'Reprovado'
+
+print(f' - Situação é igual a {User["situação"]}')
