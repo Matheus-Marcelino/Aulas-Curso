@@ -6,7 +6,7 @@ User['media'] = float(input(f'Média de {User["nome"]}: '))
 print('-=' * 40)
 print(f' - Nome é igual a {User["nome"]}')
 print(f' - Média é igual a {User["media"]:.2f}')
-if User['media'] >= 5.0:
+if User['media'] >= 6:
     User['situação'] = 'Aprovado'
 else:
     User['situação'] = 'Reprovado'
