@@ -44,7 +44,7 @@ for c in range(0, 3):
     estado['uf'] = str(input('Unidade federativa: '))
     estado['sigla'] = str(input('Sigla do estado: '))
     brasil.append(estado.copy())  # .copy() substitiu o [:]
-
+print(brasil, '\n')
 for estate in brasil:  # varrendo a lista
     for key, value in estate.items():  # varrendo os dicionarios
         print(f'O campo {key} tem valor {value}')
