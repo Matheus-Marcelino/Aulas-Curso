@@ -38,7 +38,7 @@ from time import sleep
 
 def contador(i, f, p):
     print('-=' * 20)
-    
+
     if p < 0:
         p *= -1
     if p == 0:
