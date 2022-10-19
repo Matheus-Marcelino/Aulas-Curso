@@ -50,7 +50,7 @@ somar(4)
 
 somar = somar(3, 6, 8)
 print(somar)
-#print(somar(6, 7, 1))
+# print(somar(6, 7, 1))  --  não pode ser utilizado quando se coloca a operação no return
 
 
 def fatorial(num=1):
