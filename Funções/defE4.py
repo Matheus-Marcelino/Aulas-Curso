@@ -23,10 +23,18 @@ def maior(*num):
     for c in num:
         print(f'{c}', end=' ', flush=True)
         sleep(0.5)
+
     print(f'Foram informados {len(num)} valores no total')
-    print(f'O maior valor foi {max(num)}')
+
+    if len(num) == 0:
+        print(f'O maior valor foi 0', end=' ')
+        sleep(0.5)
+    else:
+        print(f'O maior valor foi {max(num)}')
 
 
 maior(4, 5, 2, 1)
 maior(4, 5, 5, 3, 40)
 maior(1, 0, 5)
+maior(6)
+maior()
