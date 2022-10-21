@@ -1,7 +1,5 @@
-from datetime import date
-
-
 def voto(idade):
+    from datetime import date  # scopo de importação, só irá funcionar durante essa função
     print(date.today().year)
     idade = date.today().year - idade
     if 65 > idade >= 18:
