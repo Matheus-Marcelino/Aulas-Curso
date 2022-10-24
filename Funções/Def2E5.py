@@ -22,6 +22,8 @@ def Notas(*notas: float, sit: bool = False) -> dict:
     if sit:
         if media < 5:
             ficha['situação'] = 'RUIM'
+        elif 5 <= media <= 7:
+            ficha['situação'] = 'RAZOAVEL   '
         else:
             ficha['situação'] = 'ÓTIMO'
 
