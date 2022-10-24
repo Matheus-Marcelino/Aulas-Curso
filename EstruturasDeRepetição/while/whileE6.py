@@ -1,6 +1,3 @@
-from tkinter import N
-
-
 quant = int(input('Quantos termos você quer mostrar?: '))
 n = 0
 n2 = 1
