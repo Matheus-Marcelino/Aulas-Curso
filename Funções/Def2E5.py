@@ -30,5 +30,8 @@ def Notas(*notas: float, sit: bool = False) -> dict:
     return ficha
 
 
-resposta = Notas(5.5, 2.5, 1.5, sit=False)
+resposta = Notas(5.5, 2.5, 1.5)
+print(resposta)
+print('-=' * 40)
+resposta = Notas(5.6, 7.5, 3.5, sit=True)
 print(resposta)
