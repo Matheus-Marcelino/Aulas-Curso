@@ -10,4 +10,4 @@ while cont != quant:
     n2 = n
     n = N3
     cont += 1
-print('>> fim')
+print('fim')
