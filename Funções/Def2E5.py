@@ -6,13 +6,11 @@ def Notas(*notas: float, sit: bool = False) -> dict:
     """
 
     ficha = dict()
-    tot = len(notas)
-    maior, menor = max(notas), min(notas)
-    media = sum(notas) / tot
+    media = sum(notas) / len(notas)
     # sum() função para somar os numeros da tupla
-    ficha['total'] = tot
-    ficha['maior'] = maior
-    ficha['menor'] = menor
+    ficha['total'] = len(notas)
+    ficha['maior'] = max(notas)
+    ficha['menor'] = min(notas)
     ficha['media'] = f'{media:.2f}'
 
     if sit:
