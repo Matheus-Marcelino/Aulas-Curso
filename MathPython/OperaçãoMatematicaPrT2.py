@@ -28,4 +28,4 @@ print('')
 preço = float(input('qual é o preço do produto?\nR$'))
 desconto = float(input('qual é o desconto do produto?\n%'))
 
-print('O preço do produto ficará em:R${:.2f}'.format(preço * desconto / 100))
+print('O preço do produto ficará em:R${:.2f}'.format(preço - (preço * desconto / 100)))
