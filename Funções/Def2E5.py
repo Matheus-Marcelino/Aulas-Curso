@@ -11,7 +11,7 @@ def Notas(*notas: float, sit: bool = False) -> dict:
     ficha['maior'] = max(notas)
     ficha['menor'] = min(notas)
     ficha['media'] = f'{(sum(notas) / len(notas)):.2f}'
-    
+
     if sit:
         if float(ficha['media']) < 5:
             ficha['situação'] = 'RUIM'
