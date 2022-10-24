@@ -2,20 +2,18 @@ medida = float(input('Uma distancia em metros: '))
 cm = medida * 100
 mm = medida * 1000
 
-print('A medida de {:.2f}m corresponde a {:.2f}cm e {:.2f}mm'.format(medida, cm, mm))
+print('A medida de {:.2f}m corresponde a {:.2f}cm e {:.2f}mm'.format(
+    medida, cm, mm))
 print('=' * 20)
 print('Tabuada')
 print('')
 
 
 n = int(input('Digite um numero para Tabuada ser feita: '))
-n1 = 0
 quant = int(input('tamanho da tabuada: '))
-quant2 = range(0, quant + 1)
 
-for c in quant2:
-    print(f'{n1} x {n} = {n1 * n}')
-    n1 += 1
+for c in range(0, quant+1):
+    print(f'{c} x {n} = {c * n}')
 
 # forma antiga
 """print('Tabuada do {}\n1 x {:2} = {}\n2 x {:2} = {}\n3 x {:2} = {}\n4 x {:2} = {}\n5 x {:2} = {}\n6 x {:2} = {}'
