@@ -13,4 +13,3 @@ def Ficha() -> None:
 
 
 Ficha()
-g
