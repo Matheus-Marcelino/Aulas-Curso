@@ -1,0 +1,4 @@
+num = int(input('Digite um valor: '))
+fat = fatorial(num)
+print(f'O fatorial de {num} é {fat}')
+print(f'O dobre de {num} é {dobro(num)}')
