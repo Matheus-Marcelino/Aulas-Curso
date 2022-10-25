@@ -8,3 +8,6 @@ def fatorial(n: int) -> int:
 def dobro(n: int) -> int:
     return n * 2
 
+
+def triplo(n: int) -> int:
+    return n * 3
