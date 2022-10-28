@@ -1,8 +1,5 @@
-from Modularizacao.moedaE4.moeda import resumo
+from exercicio5.utilidadescev.moeda import resumo
 
 
 def leiaDinheiro(valor: float) -> None:
     resumo(valor)
-
-
-leiaDinheiro(3)
