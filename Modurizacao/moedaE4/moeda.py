@@ -20,7 +20,7 @@ def metade(preco: float, ident: str = 'R$') -> str:
 
 def resumo(valor: int, acrescimo: int, reducao: int) -> None:
     print('-' * 30)
-    print(f'{"RESUMO DO VALOR":^30}')
+    print('RESUMO DO VALOR'.center(30))  # centraliza a string
     print('-' * 30)
     print(f'Preço analisado: {moeda(valor):>6}')
     print(f'Dobro do preço: {dobro(valor):>6}')
