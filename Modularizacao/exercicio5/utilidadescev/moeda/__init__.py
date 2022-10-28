@@ -26,5 +26,5 @@ def resumo(valor: int, acrescimo: int = 10, reducao: int = 5) -> None:
     print(f'Dobro do preço: \t{dobro(valor)}')
     print(f'Metade do preço: \t{metade(valor)}')
     print(f'{acrescimo}% de aumento: \t{aumentar(valor, acrescimo)}')
-    print(f'{reducao}% de reducao: \t{diminuir(valor, reducao)}')
+    print(f'{reducao}% de reducao: \t\t{diminuir(valor, reducao)}')
     print('-' * 50)
