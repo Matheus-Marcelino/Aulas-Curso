@@ -18,7 +18,7 @@ def metade(preco: float, ident: str = 'R$') -> str:
     return moeda(preco / 2, ident)
 
 
-def resumo(valor: int, acrescimo: int=10, reducao: int=5) -> None:
+def resumo(valor: int, acrescimo: int = 10, reducao: int = 5) -> None:
     print('-' * 50)
     print('RESUMO DO VALOR'.center(50))  # centraliza a string
     print('-' * 50)
