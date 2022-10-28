@@ -1,9 +1,9 @@
-def aumentar(preco: float) -> float:
-    return preco + preco/10
+def aumentar(preco: float, taxa: float) -> float:
+    return preco + (preco * taxa/100)
 
 
-def diminuir(preco: float) -> float:
-    return preco - preco/15
+def diminuir(preco: float, taxa: float) -> float:
+    return preco - (preco * taxa/100)
 
 
 def dobro(preco: float) -> float:
