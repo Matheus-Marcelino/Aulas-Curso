@@ -1,4 +1,4 @@
-from uteis_AULA import numeros
+from uteis_aula import numeros
 # from uteis import * -> importa tudo
 # from uteis import numeros, strings, datas -> importa separadamente
 
