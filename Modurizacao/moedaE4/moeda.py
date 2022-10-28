@@ -18,13 +18,13 @@ def metade(preco: float, ident: str = 'R$') -> str:
     return moeda(preco / 2, ident)
 
 
-def resumo(valor: int, acrescimo: int, reducao: int) -> None:
-    print('-' * 30)
-    print('RESUMO DO VALOR'.center(30))  # centraliza a string
-    print('-' * 30)
-    print(f'Preço analisado: {moeda(valor):>6}')
-    print(f'Dobro do preço: {dobro(valor):>6}')
-    print(f'Metade do preço: {metade(valor):>6}')
-    print(f'{acrescimo}% de aumento: {aumentar(valor, acrescimo):>6}')
-    print(f'{reducao}% de reducao: {diminuir(valor, reducao):>6}')
-    print('-' * 30)
+def resumo(valor: int, acrescimo: int=10, reducao: int=5) -> None:
+    print('-' * 50)
+    print('RESUMO DO VALOR'.center(50))  # centraliza a string
+    print('-' * 50)
+    print(f'Preço analisado: \t{moeda(valor)}')
+    print(f'Dobro do preço: \t{dobro(valor)}')
+    print(f'Metade do preço: \t{metade(valor)}')
+    print(f'{acrescimo}% de aumento: \t{aumentar(valor, acrescimo)}')
+    print(f'{reducao}% de reducao: \t{diminuir(valor, reducao)}')
+    print('-' * 50)
