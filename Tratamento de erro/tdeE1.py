@@ -3,8 +3,8 @@ def leiaInt(informacao: str) -> int:
         try:
             numero = int(input(informacao))
             break
-        except ValueError:
-            print('Um erro de digitação ocorreu! tente denovo!')
+        except (ValueError, TypeError):
+            print('Um erro de digitação ocorreu! tente denovo!\n')
     return numero
 
 
@@ -14,7 +14,7 @@ def leiafloat(informacao: str) -> float:
             numero = float(input(informacao))
             break
         except ValueError:
-            print('Um erro de digitação ocorreu! tente denovo!')
+            print('Um erro de digitação ocorreu! tente denovo!\n')
     return numero
 
 
