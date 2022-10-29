@@ -13,11 +13,11 @@ def leiafloat(informacao: str) -> float:
         try:
             numero = float(input(informacao))
             break
-        except ValueError:
+        except (ValueError, TypeError):
             print('Um erro de digitação ocorreu! tente denovo!\n')
     return numero
 
 
 inteiro = leiaInt('Digite um numero inteiro: ')
 real = leiafloat('Digite um número real: ')
-print(f'O números digitados foram: int:{inteiro}  Real:{real}')
+print(f'O números digitados foram: int: {inteiro}  Real: {real}')
