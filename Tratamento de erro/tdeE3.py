@@ -19,9 +19,9 @@ while True:
         for i in range(len(datas)):
             for j in range(len(datas[i])):
                 if j % 2 == 0:
-                    print(datas[i][j].replace('_', ' '), end='')
+                    print('{:<30}'.format(datas[i][j].replace('_', ' ')), end='')
                 else:
-                    print(f'{datas[i][j]:^10} Anos')
+                    print(f'{datas[i][j]} Anos')
             print()
         sleep(2)
     elif decisao == 3:
