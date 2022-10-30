@@ -35,7 +35,7 @@ def cadastrar() -> None:
     nome = nome.replace(' ', '_')
 
     with open('banco-de-dados/cadastro.txt', 'a+', encoding='utf-8') as file:
-        file.write(f'{nome}    {idade}\n')
+        file.write(f'{nome} {idade}\n')
 
 
 def mostrar_cadastro() -> list:
