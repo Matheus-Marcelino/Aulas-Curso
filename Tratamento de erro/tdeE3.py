@@ -6,7 +6,8 @@ while True:
     estilo('MENU PRINCIPAL', 40)
     print('\033[1;33m1 -\033[m \33[1;35mCadastrar nova Pessoa\033[m'
           '\n\033[1;33m2 -\033[m \033[1;35mVer pessoas cadrastadas\033[m'
-          '\n\033[1;33m3 -\033[m \033[1;35mSair do programa\033[m')
+          '\n\033[1;33m3 -\033[m \033[1;35mSair do programa\033[m'
+          '\n\033[1;33m4 -\033[m \033[1;35mLimpar Terminal\033[m')
     decisao = leiaInt('Sua opção: ')
 
     if decisao == 1:
@@ -28,7 +29,9 @@ while True:
         print('\033[1;33mFinalizando...\033[m')
         sleep(2)
         break
+    elif decisao == 4:
+        clear()
     else:
-        print(f'\033[m1;31mPalavra "{decisao}" não reconhecida pelo sistema, '
-              'porfavor faça uma escolah valida!\033[m')
+        print(f'\033[1;31mCaracter "{decisao}" não foi reconhecido pelo sistema, '
+              'porfavor faça uma escolha valida!\033[m')
 print('\033[1;32mVolte sempre :)\033[m')
