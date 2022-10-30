@@ -6,6 +6,12 @@ ArquivoINTL()
 
 
 def cadastrar() -> None:
+    """
+    --> insere uma pessoa a uma base de dados
+    nome: varivel para colocar um nome qualquer para o cadastro
+    idade: varivel da idado do mesmo
+    return: sem retorno
+    """
     if not path.exists('banco-de-dados'):
         mkdir('banco-de-dados')
     while True:
@@ -35,6 +41,7 @@ def cadastrar() -> None:
 
 def mostrar_cadastro() -> list:
     """
+    --> revela quem está na base de dados
     lista_user: pega todos os dados organizados
     datas: recolhe todos os cadatros no arquivo
     return: retorna a lista organizada
