@@ -1,8 +1,8 @@
 from os import path, mkdir
 from colorama import init
-#from tdeE3Mol import ArquivoINTL
+from tdeE3Mol import ArquivoINTL
 init()
-# ArquivoINTL()
+ArquivoINTL()
 
 
 def cadastrar() -> None:
@@ -19,6 +19,7 @@ def cadastrar() -> None:
             continue
         else:
             print('\033[1;33mNão entendi oque você quis dizer\033[m')
+    nome = nome.replace(' ', '_')
 
     while True:
         try:
@@ -28,12 +29,20 @@ def cadastrar() -> None:
             print('\033[1;31mPOrfavor, apenas números inteiro!\033[m')
 
     with open('banco-de-dados/cadastro.txt', 'a+') as file:
-        file.write(f'{nome}    {idade} Anos\n')
+        file.write(f'{nome}    {idade}\n')
 
 
-def mostrar_cadastro() -> None:
+def mostrar_cadastro() -> list:
+    """
+    lista_user: pega todos os dados organizados
+    datas: recolhe todos os cadatros no arquivo
+    return: retorna a lista organizada
+    """
     with open('banco-de-dados/cadastro.txt', 'r') as file:
-        print(file.readlines())
-
-
-mostrar_cadastro()
+        lista_temp, lista_user = [], []
+        datas = file.readlines()
+        for data in datas:
+            lista_temp.append(data[:-1])
+        for c in range(len(lista_temp)):
+            lista_user.append(lista_temp[c].split())
+        return lista_user

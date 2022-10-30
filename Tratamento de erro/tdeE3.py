@@ -11,7 +11,7 @@ while True:
     if decisao == 1:
         cadastrar()
     elif decisao == 2:
-        mostrar_cadastro()
+        print(mostrar_cadastro())
     elif decisao == 3:
         break
     else:
