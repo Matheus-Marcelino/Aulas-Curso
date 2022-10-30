@@ -35,3 +35,4 @@ while True:
         print(f'\033[1;31mCaracter "{decisao}" não foi reconhecido pelo sistema, '
               'porfavor faça uma escolha valida!\033[m')
 print('\033[1;32mVolte sempre :)\033[m')
+sleep(1.5)
