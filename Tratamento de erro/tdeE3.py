@@ -1,6 +1,6 @@
+from time import sleep
 from tdeE3Mol.cadastro import cadastrar, mostrar_cadastro
 from tdeE3Mol import estilo, leiaInt, clear
-from time import sleep
 
 while True:
     estilo('MENU PRINCIPAL', 40)
