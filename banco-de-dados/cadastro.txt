@@ -1,9 +1,5 @@
 Matheus_Marcelino_Lopes 18
-Ronaldinho_Cezar_Cardeiro 47
-Pedro_Cardoso_De_Melo 27
-Maria_Da_Silva 19
-Rogério_Figueredo 23
-Kauan_Pedro_Da_Silva_Melo 23
-Renato_Da_Silva_Cardoso 11
-Lucas_Gabriel 17
 Josh_Drumond 17
+Pedro_Marcelino 24
+Kauan_Pedro 17
+Ronaldinho_Pereira 33

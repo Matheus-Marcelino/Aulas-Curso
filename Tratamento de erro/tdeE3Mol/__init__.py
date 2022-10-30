@@ -7,14 +7,14 @@ def estilo(palavra: str, tamanho: int) -> None:
 
 
 def leiaInt(informacao: str) -> int:
-    print('-' * 40)
+    print('-' * 43)
     while True:
         try:
             numero = int(input(informacao))
             break
         except (ValueError, TypeError):
             print('Um erro de digitação ocorreu! tente denovo!\n')
-    print('-' * 40)
+    print('-' * 43)
     return numero
 
 

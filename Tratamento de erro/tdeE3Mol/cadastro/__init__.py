@@ -1,8 +1,14 @@
 from os import path, mkdir
 from colorama import init
-from tdeE3Mol import ArquivoINTL
 init()
-ArquivoINTL()
+
+
+def setCriarArquivo() -> None:
+    """
+    Cria a pasta
+    """
+    if not path.exists('banco-de-dados'):
+        mkdir('banco-de-dados')
 
 
 def cadastrar() -> None:
@@ -12,8 +18,6 @@ def cadastrar() -> None:
     idade: varivel da idado do mesmo
     return: sem retorno
     """
-    if not path.exists('banco-de-dados'):
-        mkdir('banco-de-dados')
     while True:
         nome = str(input('\nDigite o nome a ser cadastrado: ')).title().strip()
         certificando = str(
@@ -38,7 +42,7 @@ def cadastrar() -> None:
         file.write(f'{nome} {idade}\n')
 
 
-def mostrar_cadastro() -> list:
+def mostrar_cadastro():
     """
     --> revela quem está na base de dados
     lista_user: pega todos os dados organizados
@@ -50,6 +54,13 @@ def mostrar_cadastro() -> list:
         datas = file.readlines()
         for data in datas:
             lista_temp.append(data[:-1])
+        if len(lista_temp) == 0:
+            return 'vazio'
+
         for c in range(len(lista_temp)):
             lista_user.append(lista_temp[c].split())
         return lista_user
+
+
+mostrar_cadastro()
+setCriarArquivo()
