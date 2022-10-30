@@ -20,8 +20,7 @@ def cadastrar() -> None:
             input(f'Esse nome "{nome}" está correto? [S/N]:')).lower().strip()
         if 's' in certificando:
             break
-
-        if 'n' in certificando:
+        elif 'n' in certificando:
             continue
         else:
             print('\033[1;33mNão entendi oque você quis dizer\033[m')
@@ -35,7 +34,7 @@ def cadastrar() -> None:
 
     nome = nome.replace(' ', '_')
 
-    with open('banco-de-dados/cadastro.txt', 'a+') as file:
+    with open('banco-de-dados/cadastro.txt', 'a+', encoding='utf-8') as file:
         file.write(f'{nome}    {idade}\n')
 
 
@@ -46,7 +45,7 @@ def mostrar_cadastro() -> list:
     datas: recolhe todos os cadatros no arquivo
     return: retorna a lista organizada
     """
-    with open('banco-de-dados/cadastro.txt', 'r') as file:
+    with open('banco-de-dados/cadastro.txt', 'r', encoding='utf-8') as file:
         lista_temp, lista_user = [], []
         datas = file.readlines()
         for data in datas:
