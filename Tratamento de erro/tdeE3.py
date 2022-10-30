@@ -5,7 +5,7 @@ from tdeE3Mol import estilo, leiaInt, clear
 while True:
     estilo('MENU PRINCIPAL', 40)
     print('\033[1;33m1 -\033[m \33[1;35mCadastrar nova Pessoa\033[m'
-          '\n\033[1;33m2 -\033[m \033[1;35mVer pessoas cadrastadas\033[m'
+          '\n\033[1;33m2 -\033[m \033[1;35mVer pessoas cadastradas\033[m'
           '\n\033[1;33m3 -\033[m \033[1;35mSair do programa\033[m'
           '\n\033[1;33m4 -\033[m \033[1;35mLimpar Terminal\033[m')
     decisao = leiaInt('Sua opção: ')
