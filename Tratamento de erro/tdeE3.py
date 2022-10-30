@@ -13,7 +13,7 @@ while True:
     if decisao == 1:
         estilo('CADASTRO', 40)
         cadastrar()
-        print('\033[1;32mCADASTRADO COM SUCESSO!\033[m')
+        print('\033[1;32mCADASTRADO COM SUCESSO!\033[m\n')
     elif decisao == 2:
         estilo(" LOGGIN'S ", 40)
         datas = mostrar_cadastro()
