@@ -9,7 +9,7 @@ def cadastrar() -> None:
     if not path.exists('banco-de-dados'):
         mkdir('banco-de-dados')
     while True:
-        nome = str(input('\nDigite o nome a ser cadrastado: ')).title().strip()
+        nome = str(input('\nDigite o nome a ser cadastrado: ')).title().strip()
         certificando = str(
             input(f'Esse nome "{nome}" está correto? [S/N]:')).lower().strip()
         if 's' in certificando:
@@ -19,7 +19,6 @@ def cadastrar() -> None:
             continue
         else:
             print('\033[1;33mNão entendi oque você quis dizer\033[m')
-    nome = nome.replace(' ', '_')
 
     while True:
         try:
@@ -27,6 +26,8 @@ def cadastrar() -> None:
             break
         except (ValueError, TypeError):
             print('\033[1;31mPOrfavor, apenas números inteiro!\033[m')
+
+    nome = nome.replace(' ', '_')
 
     with open('banco-de-dados/cadastro.txt', 'a+') as file:
         file.write(f'{nome}    {idade}\n')
