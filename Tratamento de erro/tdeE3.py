@@ -11,7 +11,7 @@ while True:
     decisao = leiaInt('Sua opção: ')
 
     if decisao == 1:
-        estilo('CASDASTRO', 40)
+        estilo('CADASTRO', 40)
         cadastrar()
     elif decisao == 2:
         estilo(" LOGGIN'S ", 40)
