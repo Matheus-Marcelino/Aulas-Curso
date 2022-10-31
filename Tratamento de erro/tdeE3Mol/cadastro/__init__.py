@@ -60,7 +60,3 @@ def mostrar_cadastro():
         for c in range(len(lista_temp)):
             lista_user.append(lista_temp[c].split())
         return lista_user
-
-
-mostrar_cadastro()
-setCriarArquivo()
