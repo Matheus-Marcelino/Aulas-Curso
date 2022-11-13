@@ -35,10 +35,11 @@ class ContaCorrent:
 
 
 class Usuario:
-    def __init__(self, nome: str, email: str, senha: str) -> None:
-        self.nome = nome
-        self.email = email
-        self.senha = senha
+    # o primeiro parametro n precisa se chamar self, mas por convenção é ' self '
+    def __init__(salsicha, nome: str, email: str, senha: str) -> None:
+        salsicha.nome = nome
+        salsicha.email = email
+        salsicha.senha = senha
 
 
 class Acesso:
@@ -82,13 +83,18 @@ print('\n')
 class Produto:
     # atributo de classe
     imposto = 1.05  # 0.05% de imposto
+    contador = 0
 
-    # o primeiro parametro n precisa se chamar self, mas por convenção é ' self '
-    def __init__(salsicha, nome: str, descricao: str, valor: float) -> None:
-        salsicha.nome = nome
-        salsicha.descricao = descricao
-        salsicha.valor = (valor * Produto.imposto)
+    def __init__(self, nome: str, descricao: str, valor: float) -> None:
+        self.id = Produto.contador + 1
+        self.nome = nome
+        self.descricao = descricao
+        self.valor = (valor * Produto.imposto)
+        Produto.contador = self.id
 
+
+'''
+-- primeira parte 
 
 p1 = Produto('PlayStation 5', 'Video game', 4.556)
 p2 = Produto('Xbox S', 'Video game', 3856.87)
@@ -100,4 +106,27 @@ print(p2.valor)
 
 # não precisamos criar uma instancia de uma classe para fazer acesso a um atributo de classe
 
-print(Produto.imposto)
+print(Produto.imposto, '\n')
+
+print(p1.id)  # toda vez que a classe for chamada o id dela irá aumentar
+print(p2.id)  # atributos de classe == atributos estáticos:
+'''
+
+
+# Atributos Dinamicos -> Um atributo de instancia que pode ser criado em tempo de execução
+# O atributo dinamico será exclusivo da instancia quer o criou
+
+p1 = Produto('PlayStation 5', 'Video game', 4.556)
+p2 = Produto('Arroz', 'Alimento', 3856.87)
+
+p2.peso = '5kg'  # não existe o atributo peso na classe Produto
+
+print(
+    f'Produto: {p2.nome},\nDescrição: {p2.descricao}\nValor: {p2.valor}\nPeso: {p2.peso}')
+
+# print(f'Produto: {p1.nome},\nDescrição: {p1.descricao}\nValor: {p1.valor}\nPeso: {p1.peso}')
+# -- irá dar um erro pois o atributo dinamico do p1 n foi criado
+
+print(p2.__dict__)  # informações do produtos 2
+# print(Produto.__dict__)
+del p2.peso  # irá apagar o atributo peso
